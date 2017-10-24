@@ -10,18 +10,18 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+/*
+//Route::get('/', function () {
+    //return view('welcome');
+//});
 
 //練習一
-Route::get('student/{student_no}',function ($student_no){
-    return '學號：'.$student_no;
-});
-Route::get('student/{student_no}/score',function ($student_no){
-    return '學號：'.$student_no.'的所有成績';
-});
+//Route::get('student/{student_no}',function ($student_no){
+    //return '學號：'.$student_no;
+//});
+//Route::get('student/{student_no}/score',function ($student_no){
+    //return '學號：'.$student_no.'的所有成績';
+//});
 
 //練習二
 Route::get('student/{student_no}/score/{subject}', function ($student_no,$subject){
@@ -89,3 +89,7 @@ Route::get('cool', 'Cool\TestController@indexc');
 Route::group(['namespace' => 'Cool'],function (){
     Route::get('cool', 'TestController@indexc');
 });
+*/
+
+//練習二 CH7
+Route::get('/board', 'BoardController@getIndex');
