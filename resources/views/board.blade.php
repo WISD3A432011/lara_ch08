@@ -7,19 +7,9 @@
 	<script type="text/javascript" src="{{ asset('js/jquery.min.js') }} "></script>
 	<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 </head>
-<body>
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<a class="navbar-brand" href="/">HelloLaravel</a>
-			<ul class="nav navbar-nav">
-				<li>
-					<a href="#">排行榜</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<div style="padding-top: 70px;"></div>
-	<div class="container">
+@extends('layout.master')
+@section('title','排行榜')
+@section('content')
 		<div class="page-header">
 			<h1>排名</h1>
 		</div>
@@ -53,6 +43,4 @@
 				</tbody>
 			</table>
 		</div>
-	</div>
-</body>
-</html>
+@stop
