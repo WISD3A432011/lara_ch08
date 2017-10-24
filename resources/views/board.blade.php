@@ -5,11 +5,9 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}" />
 	<script type="text/javascript" src="{{ asset('js/jquery.min.js') }} "></script>
-	<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
-</head>
-@extends('layout.master')
-@section('title','排行榜')
-@section('content')
+	@extends('layout.master')
+	@section('title','排行榜')
+	@section('content')
 		<div class="page-header">
 			<h1>排名</h1>
 		</div>
@@ -37,7 +35,7 @@
 					<td>60</td>
 					<td>180</td>
 					<td>
-						<a class="btn btn-default btn-sm" href="#">查看學生資料</a>
+						<a class="btn btn-default btn-sm" href="score.blade.php">查看學生資料</a>
 					</td>
 				</tr>
 				</tbody>
