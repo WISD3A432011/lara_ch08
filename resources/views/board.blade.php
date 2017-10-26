@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>詳細資料</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}" />
-	<script type="text/javascript" src="{{ asset('js/jquery.min.js') }} "></script>
+
 	@extends('layout.master')
 	@section('title','排行榜')
 	@section('content')
