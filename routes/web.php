@@ -10,11 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-/*
-//Route::get('/', function () {
-    //return view('welcome');
-//});
 
+Route::get('/', function () {
+    return view('welcome');
+});
+/*
 //練習一
 //Route::get('student/{student_no}',function ($student_no){
     //return '學號：'.$student_no;
@@ -93,3 +93,4 @@ Route::group(['namespace' => 'Cool'],function (){
 
 //練習二 CH7
 Route::get('/board', 'BoardController@getIndex');
+Route::get('/score', 'StudentController@getStudentScore');
