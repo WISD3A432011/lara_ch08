@@ -94,3 +94,11 @@ Route::group(['namespace' => 'Cool'],function (){
 //練習二 CH7
 Route::get('/board', 'BoardController@getIndex');
 Route::get('/score', 'StudentController@getStudentScore');
+
+Route::group(['prefix' => 'student'],function() {
+//ch07練習三-7 測試http://localhost:8000/student/s9876543210
+Route::get('{student_no}', ['as' => 'student', 'uses' => 'StudentController@getStudentData']);
+//ch07練習三-7 http://localhost:8000/student/s9999999999/score/math
+Route::get('{student_no}/score/{subject?}', ['as' => 'student.score',
+ 'uses' => 'StudentController@getStudentScore'])->where(['subject' => '(chinese|english|math)']);
+});
