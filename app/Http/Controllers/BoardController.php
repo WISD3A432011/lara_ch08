@@ -11,6 +11,9 @@ class BoardController extends Controller
 {
     public function getIndex()
     {
-        return View('board');
+        //return View('board');
+        $scores = Score::orderByTotal()->orderBySubject()->get();
+        $data = ['scores'=>$scores];
+        return view('board',$data);
     }
 }
