@@ -22,7 +22,7 @@
 				<tbody>
 				@foreach($scores as $index => $score)
 				<tr>
-					<td>{{$index}}</td>
+					<td>{{$index+1}}</td>
 					<td>{{$score->student->no}}</td>
 					<td>{{$score->student->user->name}}</td>
 					<td>{{$score->chinese}}</td>
