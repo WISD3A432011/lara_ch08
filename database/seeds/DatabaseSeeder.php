@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
+        /*
         $user=UserEloquent::create([
             'name'=>'小明',
             'email'=>'min@mail.com',
@@ -31,5 +32,8 @@ class DatabaseSeeder extends Seeder
             'math'=>60,
             'total'=>180
         ]);
+        */
+        $this->call(TestTableSeeder::class);
+        $this->call(DataTableSeeder::class);
     }
 }
